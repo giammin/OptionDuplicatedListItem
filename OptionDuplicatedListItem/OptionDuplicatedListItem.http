@@ -1,0 +1,6 @@
+@OptionDuplicatedListItem_HostAddress = http://localhost:5130
+
+GET {{OptionDuplicatedListItem_HostAddress}}/config
+Accept: application/json
+
+###
