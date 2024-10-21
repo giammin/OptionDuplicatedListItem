@@ -15,6 +15,8 @@ public record ApiConfig
 {
     public const string SectionName = "ApiConfig";
     public required Pricing Pricing { get; init; } = null!;
+    // workaround
+    //public Pricing Pricing { get; } = new([]);
 }
 
 public record Pricing(Dictionary<ProjectCategory, IEnumerable<ProjectPricingPlan>> Projects);
